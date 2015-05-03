@@ -88,7 +88,7 @@ plugin.onLangLoaded = function()
 		   				(function () {return (iOS ? 'target="_blank">' : 'target="datafrm">');}) +
                         '<input type="hidden" name="hash" id="datahash" value="">'+
                         '<input type="hidden" name="no" id="datano" value="">'+
-                '</form>').width(0).height(0));
+			            '</form>').width(0).height(0));
 }
 
 plugin.onRemove = function()
