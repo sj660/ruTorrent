@@ -84,10 +84,10 @@ plugin.onLangLoaded = function()
 	}));
 	var iOS = /(iPad|iPhone|iPod)/g.test(navigator.userAgent);
 	$(document.body).append($('<form action="plugins/data/action.php" id="getdata" method="get" '+
-		   				(function () {return (iOS ? 'target="_blank">' : 'target="datafrm">');}) +
-                        '<input type="hidden" name="hash" id="datahash" value="">'+
-                        '<input type="hidden" name="no" id="datano" value="">'+
-			            '</form>').width(0).height(0));
+		   (function () {return (iOS ? 'target="_blank">' : 'target="datafrm">');}) +
+           '<input type="hidden" name="hash" id="datahash" value="">'+
+           '<input type="hidden" name="no" id="datano" value="">'+
+			'</form>').width(0).height(0));
 }
 
 plugin.onRemove = function()
